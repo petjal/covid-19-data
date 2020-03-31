@@ -41,6 +41,6 @@ jobs:
         echo "${mState}"
         #
         mCounties="$(curl -s "https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv")"
-        mCounty"$(echo "${mStates}" | grep Essex | grep Massachusetts)"
+        mCounty="$(echo "${mCounties}" | grep Essex | grep Massachusetts)"
         echo "${mCounty}"
        
