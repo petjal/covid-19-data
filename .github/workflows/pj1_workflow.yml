@@ -36,4 +36,6 @@ jobs:
         echo $SHELL
         echo
         mStates="$(curl -s "https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-states.csv")"
-        echo "${mStates}"
+        #echo "${mStates}"
+        mMA="$(echo "${mStates}" | grep Massachusetts")"
+        echo "${mMA}"
